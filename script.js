@@ -86,7 +86,7 @@ const gameOver = () => {
     <button onclick="closeModal()">Close</button>
   `;
 
-  addHistory(questionText, timeTakenInt, errorCount);
+  addHistory(questionText, timeTaken.toFixed(0), errorCount);
 
   // restart everything
   startTime = null;
@@ -134,6 +134,6 @@ displayHistory();
 setInterval(() => {
   const currentTime = new Date().getTime();
   const timeSpent = (currentTime - startTime) / 1000;
-  const timeSpentInt = timeSpent.toFixed(0)
+  const timeSpentInt = timeSpent.toFixed(0);
   document.getElementById("show-time").innerHTML = `${startTime ? timeSpentInt : 0} seconds`;
 }, 1000);
