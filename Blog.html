@@ -46,6 +46,29 @@
 
         </ul>
     </section>
+    <section>
+        <h2>2. Difference Between Global Scope And block Scope. </h2>
+        <h3 style="text-align:center ;">Global Scope</h3>
+        <p>
+            Global scope contains all of the things defined outside of all code blocks. A code block
+            simply consists of grouped statements inside curly braces ({ }). if statement, loops, function are examples
+            of structure that create a code block. A global variable has global scope. A global variable is accessible
+            from anywhere in the code.
+        <h3 style="text-align:center ;">Blog Scope </h3>
+        <p> block scope is similar to a function scope, but is limited to a block instead of a function.As of ES3, a
+            catch clause in try / catch statements has a block scope, which means that it has its own scope. It's
+            important to note that the try clause does not have a block scope, only the catch clause does.As of ES6, let
+            and const variables are attached implicitly to the current block scope instead of the function scope. This
+            means that these variables are limited to the block they were declared in, whether it's an if block, a for
+            block, or a function.
+        </p>
+    </section>
+    <section>
+        <h2>3. How to work event loop?</h2>
+        <p>The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is
+            empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which
+            effectively runs it. Such an iteration is called a tick in the Event Loop.</p>
+    </section>
 
 </body>
 
